@@ -1,0 +1,3 @@
+total 0
+-rw-rw-r-- 1 mglemaudthesee mglemaudthesee 0 Sep  4 03:53 files.txt
+-rw------- 1 mglemaudthesee mglemaudthesee 0 Sep  4 03:51 secret.txt
