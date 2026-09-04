@@ -1,0 +1,37 @@
+mglemaudthesee@cs375-fa26-vm1:~/CS375$ ls
+README.md  c-programs  command-line  shell-scripts
+mglemaudthesee@cs375-fa26-vm1:~/CS375$ cd command-line/
+mglemaudthesee@cs375-fa26-vm1:~/CS375/command-line$ mkdir command-line-easy && cd command-line-easy
+mglemaudthesee@cs375-fa26-vm1:~/CS375/command-line/command-line-easy$ touch hello.txt
+mglemaudthesee@cs375-fa26-vm1:~/CS375/command-line/command-line-easy$ nano hello.txt
+mglemaudthesee@cs375-fa26-vm1:~/CS375/command-line/command-line-easy$ cp hello.txt hello-copy.txt
+mglemaudthesee@cs375-fa26-vm1:~/CS375/command-line/command-line-easy$ mv hello-copy.txt ../
+mglemaudthesee@cs375-fa26-vm1:~/CS375/command-line/command-line-easy$ ls
+hello.txt
+mglemaudthesee@cs375-fa26-vm1:~/CS375/command-line/command-line-easy$ pwd
+/home/mglemaudthesee/CS375/command-line/command-line-easy
+mglemaudthesee@cs375-fa26-vm1:~/CS375/command-line/command-line-easy$ cd
+mglemaudthesee@cs375-fa26-vm1:~$ pwd
+/home/mglemaudthesee
+mglemaudthesee@cs375-fa26-vm1:~$ cd cs375
+-bash: cd: cs375: No such file or directory
+mglemaudthesee@cs375-fa26-vm1:~$ cd CS375/
+mglemaudthesee@cs375-fa26-vm1:~/CS375$ cd command-line/
+mglemaudthesee@cs375-fa26-vm1:~/CS375/command-line$ ls
+command-line-easy  hello-copy.txt
+mglemaudthesee@cs375-fa26-vm1:~/CS375/command-line$ cd command-line-easy/
+mglemaudthesee@cs375-fa26-vm1:~/CS375/command-line/command-line-easy$ rm hello.txt
+mglemaudthesee@cs375-fa26-vm1:~/CS375/command-line/command-line-easy$ ls
+mglemaudthesee@cs375-fa26-vm1:~/CS375/command-line/command-line-easy$ cat ../hello-copy.txt
+Hello, Linux!
+mglemaudthesee@cs375-fa26-vm1:~/CS375/command-line/command-line-easy$ man ls
+mglemaudthesee@cs375-fa26-vm1:~/CS375/command-line/command-line-easy$ echo "Test" > text.txt
+mglemaudthesee@cs375-fa26-vm1:~/CS375/command-line/command-line-easy$ ls
+text.txt
+mglemaudthesee@cs375-fa26-vm1:~/CS375/command-line/command-line-easy$ echo Test
+Test
+mglemaudthesee@cs375-fa26-vm1:~/CS375/command-line/command-line-easy$ nano text.txt
+mglemaudthesee@cs375-fa26-vm1:~/CS375/command-line/command-line-easy$ man ls
+mglemaudthesee@cs375-fa26-vm1:~/CS375/command-line/command-line-easy$ touch easy-log.txt
+mglemaudthesee@cs375-fa26-vm1:~/CS375/command-line/command-line-easy$ nano easy-log.txt
+mglemaudthesee@cs375-fa26-vm1:~/CS375/command-line/command-line-easy$ nano easy-log.txt
