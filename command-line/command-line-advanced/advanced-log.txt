@@ -1,0 +1,6 @@
+=== Directory Listing: Sat Sep  5 02:32:49 UTC 2026 ===
+.
+├── advanced-log.txt
+└── list_directory.sh
+
+1 directory, 2 files
