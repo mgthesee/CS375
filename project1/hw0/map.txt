@@ -1,0 +1,24 @@
+Which of the addresses from the output of running ./map are defined in the executable, and which segment/section is each defined in?
+- The addresses for _main and recur are defined inside the executable within the .text section.
+- The static data variable (&stuff) is defined in the data/bss sections.
+- The stack and heap addresses are dynamic runtime memory regions allocated by the operating system, so they are not statically defined inside the executable file.
+
+Make a list of the important segments, and what they are used for:
+- .text: Contains the compiled machine code instructions for the program.
+- .rodata: Contains read-only data, such as constant strings and format specifiers.
+- .data: Contains initialized global and static variables.
+- .bss: Contains uninitialized global and static variables.
+- Stack: A dynamic memory region used for function call frames, local variables, and return addresses.
+- Heap: A dynamic memory region used for manual memory allocation via malloc().
+
+What direction is the stack growing in?
+- The stack grows downward toward lower memory addresses (as seen by the decreasing addresses across recursive calls: e.g., 0x...124 -> 0x...0f4 -> 0x...0c4 -> 0x...094).
+
+How large is the stack frame for each recursive call?
+- The stack frame size is 48 bytes (0x30 in hex), calculated by finding the difference between consecutive recursive stack addresses (e.g., 0x7ffc0636b124 - 0x7ffc0636b0f4 = 0x30).
+
+Where is the heap? What direction is it growing in?
+- The heap is located at lower memory addresses than the stack (around the 0x...8000 range). It grows upward toward higher memory addresses (malloc 1 is at a lower address than malloc 2).
+
+Are the two malloc()ed memory areas contiguous? (e.g., is there extra space between their addresses?)
+- They are allocated sequentially in an upward direction, but they are not strictly contiguous because memory allocator metadata and alignment padding exist between the blocks.

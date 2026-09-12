@@ -1,0 +1,43 @@
+(gdb) print argv
+$1 = (char **) 0x7fffffffe328
+(gdb) print argv[0]
+$2 = 0x7fffffffe5a7 "/home/mglemaudthesee/CS375/project1/hw0/map"
+(gdb) print main
+$3 = {int (int, char **)} 0x555555555169 <main>
+(gdb) info stack
+#0  main (argc=1, argv=0x7fffffffe328) at map.c:15
+(gdb) info frame
+Stack level 0, frame at 0x7fffffffe200:
+ rip = 0x55555555517c in main (map.c:15); saved rip = 0x7ffff7c2a8c1
+ source language c.
+ Arglist at 0x7fffffffe1f0, args: argc=1, argv=0x7fffffffe328
+ Locals at 0x7fffffffe1f0, Previous frame's sp is 0x7fffffffe200
+ Saved registers:
+  rbp at 0x7fffffffe1f0, rip at 0x7fffffffe1f8
+(gdb) info registers
+rax            0x7ffff7e1ede8      140737352166888
+rbx            0x0                 0
+rcx            0x555555557db8      93824992247224
+rdx            0x7fffffffe338      140737488347960
+rsi            0x7fffffffe328      140737488347944
+rdi            0x1                 1
+rbp            0x7fffffffe1f0      0x7fffffffe1f0
+rsp            0x7fffffffe1c0      0x7fffffffe1c0
+r8             0x7ffff7e17680      140737352136320
+r9             0x7ffff7e18fa0      140737352142752
+r10            0x7fffffffe230      140737488347696
+r11            0x203               515
+r12            0x7fffffffe328      140737488347944
+r13            0x1                 1
+r14            0x7ffff7ffd000      140737354125312
+r15            0x555555557db8      93824992247224
+rip            0x55555555517c      0x55555555517c <main+19>
+eflags         0x206               [ PF IF ]
+cs             0x33                51
+ss             0x2b                43
+ds             0x0                 0
+es             0x0                 0
+fs             0x0                 0
+gs             0x0                 0
+fs_base        0x7ffff7fae740      140737353803584
+gs_base        0x0                 0

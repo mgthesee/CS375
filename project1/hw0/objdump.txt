@@ -1,0 +1,13 @@
+What file format is used for this binary? And what architecture is it compiled for?
+- File format: elf64-x86-64
+- Architecture: i386:x86-64
+
+What are some of the names of segment/sections you find?
+- Some of the sections include .text, .init, .fini, .rodata, .data, .bss, .plt, and .dynsym.
+
+What segment/section contains main (the function) and what is the address of main?
+- Section: .text
+- Address of main: 0x0000000000001209
+
+Do you see the stack segment anywhere? What about the heap? Explain.
+- There is a STACK program header listed, but it has a file size of zero. The actual stack and heap are not explicitly stored as static data sections inside the compiled binary file on disk. Instead, they are dynamic memory regions allocated and managed by the operating system at runtime when the program executes.
