@@ -1,0 +1,13 @@
+hello_world
+spacex
+love
+floopy
+baking
+priority_transfer
+barrier
+readers_writers
+thread_pool
+*.o
+.DS_Store
+# report screenshots stay out of the repo
+*.png
