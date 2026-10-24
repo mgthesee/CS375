@@ -1,0 +1,12 @@
+# CPU-bound vs I/O-bound mix - try: --scheduler fcfs,rr,mlfq,srtf --verbose
+# Format: ID arrival burst priority deadline io_every io_duration
+# All priorities are equal so only the scheduling policy matters.
+# CPU-bound jobs: long bursts, never block
+CPU1  0 14 3
+CPU2  1 12 3
+CPU3  2 15 3
+# I/O-bound (interactive) jobs: 1 unit of CPU, then 4 units waiting on I/O
+IO1   0  5 3 0 1 4
+IO2   1  5 3 0 1 4
+IO3   3  4 3 0 1 4
+IO4   5  6 3 0 1 4

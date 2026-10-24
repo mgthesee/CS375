@@ -1,0 +1,10 @@
+# Real-time style jobs with explicit deadlines (5th column) - try: --scheduler all
+# Format: ID arrival burst priority deadline
+D1   0  5  3  12
+D2   1  2  1   5
+D3   2  4  2  24
+D4   3  3  4   9
+D5   6  2  2  10
+D6   8  4  1  21
+D7  10  3  3  16
+D8  12  5  2  30
