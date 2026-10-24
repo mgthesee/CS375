@@ -1,0 +1,5 @@
+memory_simulator
+results.txt
+errors.log
+*.png
+.DS_Store

@@ -1,0 +1,10 @@
+# Memory configuration for memory_simulator --config config.txt
+# frames / page_size / pages_per_table / policy, then one line per segment:
+#   segID base limit protection [protection of each page; '+' = loaded at start]
+frames 6
+page_size 1000
+pages_per_table 4
+policy lru
+0     0 3 RO  RO+ RO  RO
+1 10000 5 RW  RW+ RO+ RW  RW  RW
+2 20000 6 RW  RW  RW+ RW  RO  RW+ RW
