@@ -1,0 +1,17 @@
+# compiled programs
+part2-lab/fcfs
+part2-lab/sjf
+part2-lab/srtf
+part2-lab/priority
+part2-lab/rr
+part2-lab/mlq
+part2-lab/mlfq
+part2-lab/lottery
+part2-lab/cfs
+part2-lab/edf
+part3-simulator/simulator
+*.exe
+*.o
+# simulator logs
+part3-simulator/*log*.txt
+.DS_Store
