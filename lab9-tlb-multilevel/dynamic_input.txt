@@ -1,0 +1,11 @@
+10
+1000
+4
+lru
+add 3 30000 5 RW
+translate 3 1 0 64 1
+add 3 40000 2 RO
+remove 1
+translate 1 0 1 0 0
+stats
+quit

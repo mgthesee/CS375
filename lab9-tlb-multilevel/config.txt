@@ -1,0 +1,12 @@
+# Author: Mali Glemaud-Thesee
+# Configuration file for --config config.txt
+# frames / pagesize / tlb / ppt / replace, then one segment per line:
+#   segID base limit RO|RW [protection of each page; '+' = loaded at start]
+frames 6
+pagesize 1000
+tlb 4
+ppt 4
+replace fifo
+0     0 3 RO  RO+ RO  RO
+1 10000 5 RW  RW+ RO+ RW  RW  RW
+2 20000 6 RW  RW  RW+ RW  RO  RW+ RW

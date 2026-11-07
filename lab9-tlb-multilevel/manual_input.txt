@@ -1,0 +1,15 @@
+10
+1000
+4
+lru
+translate 1 0 1 250 0
+translate 1 0 0 500 1
+translate 0 0 1 100 1
+translate 1 0 2 10 1
+translate 2 2 0 0 0
+translate 5 0 0 0 0
+translate 2 0 3 1200 0
+translate 1 0 1 300 0
+tlb
+stats
+quit

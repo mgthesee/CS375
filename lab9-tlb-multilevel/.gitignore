@@ -1,0 +1,6 @@
+memory_simulator_advanced
+memory_log.txt
+batch_results.txt
+random_results.txt
+*.png
+.DS_Store
